@@ -1,0 +1,19 @@
+
+apply plugin: 'java'
+
+repositories{
+	maven {
+	      url "http://ic-ppal.ceiba.com.co:8081/artifactory/remote-repos"
+	}
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    testCompile 'junit:junit:4.12'
+	// https://mvnrepository.com/artifact/org.molgenis/molgenis-data-excel
+	compile group: 'org.molgenis', name: 'molgenis-data-excel', version: '1.21.0'
+	// https://mvnrepository.com/artifact/junit/junit
+	compile group: 'junit', name: 'junit', version: '4.10'
+	
+
+}
